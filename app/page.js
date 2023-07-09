@@ -49,6 +49,9 @@ export default function Home() {
           <p>Let me know if you're interested in working together</p>
         </a>
       </div>
+      <div className="footer">
+        <p>Designed and developed by Brett P.</p>
+      </div>
     </main>
   );
 }
