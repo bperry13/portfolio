@@ -20,25 +20,13 @@ export default function Home() {
           <Image src="/brett.png" alt="Brett Perry" width={300} height={300} />
         </div>
         <div className={styles.social}>
-          <a
-            href="
-            https://www.linkedin.com/
-          "
-          >
+          <a href="https://www.linkedin.com/in/brettjp/">
             <AiOutlineLinkedin alt="LinkedIn" size={50} />
           </a>
-          <a
-            href="
-            https://www.github.com/
-          "
-          >
+          <a href="https://www.github.com/bperry13">
             <AiOutlineGithub alt="GitHub" size={50} />
           </a>
-          <a
-            href="
-            https://www.instagram.com
-          "
-          >
+          <a href="https://www.instagram.com">
             <AiOutlineInstagram alt="Instagram" size={50} />
           </a>
         </div>
