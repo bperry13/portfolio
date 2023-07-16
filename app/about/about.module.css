@@ -1,0 +1,15 @@
+.tools {
+  /* parent */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skill {
+  /* child */
+  width: 100%;
+  align-items: center;
+}
