@@ -15,50 +15,47 @@ import { AiOutlineStar } from "react-icons/ai";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <div className={styles.welcome}>
-          Hey there! I'm glad you're here. I'm Brett, a software engineer based
-          in Texas. Have a look around and let me know if you are interested in
-          working together.
-        </div>
-        <div className={styles.image}>
-          <Image src="/brett.png" alt="Brett Perry" width={300} height={300} />
+      <div className={styles.header}>
+        <div className={styles.logo}>brettperrydotdev</div>
+        <div className={styles.social}>
+          <a href="https://www.linkedin.com/in/brettjp/" target="_blank">
+            <AiOutlineLinkedin alt="LinkedIn" size={50} />
+          </a>
+          <a href="https://www.github.com/bperry13" target="_blank">
+            <AiOutlineGithub alt="GitHub" size={50} />
+          </a>
+          <a href="https://twitter.com/brettperry_dev" target="_blank">
+            <AiOutlineTwitter alt="Twitter" size={50} />
+          </a>
+          <a href="https://www.discord.com" target="_blank">
+            <FaDiscord alt="Discord" size={50} />
+          </a>
         </div>
       </div>
-      <div className={styles.social}>
-        <a href="https://www.linkedin.com/in/brettjp/" target="_blank">
-          <AiOutlineLinkedin alt="LinkedIn" size={50} />
-        </a>
-        <a href="https://www.github.com/bperry13" target="_blank">
-          <AiOutlineGithub alt="GitHub" size={50} />
-        </a>
-        <a href="https://twitter.com/brettperry_dev" target="_blank">
-          <AiOutlineTwitter alt="Twitter" size={50} />
-        </a>
-        <a href="https://www.discord.com" target="_blank">
-          <FaDiscord alt="Discord" size={50} />
-        </a>
-      </div>
-      <div className={styles.grid}>
-        <a href="" className={styles.card}>
-          <h3>About &rarr;</h3>
-          <p>Learn more about my journey into software</p>
-        </a>
-        <a href="" className={styles.card}>
-          <h3>Projects &rarr;</h3>
-          <p>Browse my previous work and templates</p>
-        </a>
-        <a href="" className={styles.card}>
-          <h3>Business &rarr;</h3>
-          <p>Review services or pay an invoice</p>
-        </a>
-        <a href="" className={styles.card}>
-          <h3>Contact &rarr;</h3>
-          <p>Let me know if you're interested in working together</p>
-        </a>
+      <div className={styles.page}>
+        <div className={styles.title}>
+          <h1>Brett Perry</h1>
+          <h2>Software Engineer</h2>
+          <button
+            type="button"
+            // Note how the "error" class is accessed as a property on the imported
+            // `styles` object.
+            className={styles.error}
+          >
+            Portfolio
+          </button>
+          <button
+            type="button"
+            // Note how the "error" class is accessed as a property on the imported
+            // `styles` object.
+            className={styles.error}
+          >
+            Resume
+          </button>
+        </div>
       </div>
       <div className={styles.footer}>
-        <p>Designed and developed by Brett P.</p>
+        Developed and designed by &copy;BRETTPERRYdotdev
       </div>
     </main>
   );
