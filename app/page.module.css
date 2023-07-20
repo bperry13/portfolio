@@ -30,6 +30,11 @@
   margin: 0 1rem;
 }
 
+.social a:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
 .page {
   background-image: url(../public/me_background.png);
   background-repeat: no-repeat;
@@ -42,10 +47,39 @@
 }
 
 .title {
-  margin: 0 1rem;
-  font-size: 3rem;
+  margin-left: 10%;
+}
+
+.title h1 {
+  margin: 1rem;
+  font-size: 4rem;
   font-weight: 700;
   text-shadow: var(--primary-glow);
+}
+
+.title p {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: var(--secondary-glow);
+  max-width: 40%;
+}
+
+.button {
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid transparent;
+  border-color: var(--tile-border);
+  transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: yellow;
 }
 
 .footer {

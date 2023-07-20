@@ -19,43 +19,32 @@ export default function Home() {
         <div className={styles.logo}>brettperrydotdev</div>
         <div className={styles.social}>
           <a href="https://www.linkedin.com/in/brettjp/" target="_blank">
-            <AiOutlineLinkedin alt="LinkedIn" size={50} />
+            <AiOutlineLinkedin alt="LinkedIn" size={40} />
           </a>
           <a href="https://www.github.com/bperry13" target="_blank">
-            <AiOutlineGithub alt="GitHub" size={50} />
+            <AiOutlineGithub alt="GitHub" size={40} />
           </a>
           <a href="https://twitter.com/brettperry_dev" target="_blank">
-            <AiOutlineTwitter alt="Twitter" size={50} />
+            <AiOutlineTwitter alt="Twitter" size={40} />
           </a>
           <a href="https://www.discord.com" target="_blank">
-            <FaDiscord alt="Discord" size={50} />
+            <FaDiscord alt="Discord" size={40} />
           </a>
         </div>
       </div>
       <div className={styles.page}>
         <div className={styles.title}>
-          <h1>Brett Perry</h1>
-          <h2>Software Engineer</h2>
-          <button
-            type="button"
-            // Note how the "error" class is accessed as a property on the imported
-            // `styles` object.
-            className={styles.error}
-          >
-            Portfolio
-          </button>
-          <button
-            type="button"
-            // Note how the "error" class is accessed as a property on the imported
-            // `styles` object.
-            className={styles.error}
-          >
-            Resume
-          </button>
+          <h1>Hi, I'm Brett.</h1>
+          <p>
+            I'm an emerging software engineer based in Texas. Have a look around
+            and let me know if you're interested in working together.
+          </p>
+          <button className={styles.button}>Portfolio</button>
+          <button className={styles.button}>Resume</button>
         </div>
       </div>
       <div className={styles.footer}>
-        Developed and designed by &copy;BRETTPERRYdotdev
+        Developed and designed by &copy;BRETTPERRY
       </div>
     </main>
   );
