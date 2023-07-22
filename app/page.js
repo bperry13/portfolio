@@ -5,18 +5,22 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { AiFillStar } from "react-icons/ai";
-import { AiOutlineStar } from "react-icons/ai";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
-        <div className={styles.logo}>brettperrydotdev</div>
+        <div className={styles.logo}>
+          <a href="https://www.brettperry.dev">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={60}
+              height={60}
+              className={styles.logo}
+            />
+          </a>
+        </div>
         <div className={styles.social}>
           <a href="https://www.linkedin.com/in/brettjp/" target="_blank">
             <AiOutlineLinkedin alt="LinkedIn" size={40} />
@@ -44,7 +48,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.footer}>
-        Developed and designed by &copy;BRETTPERRY
+        <p>Developed and designed by &copy;BRETTPERRY</p>
       </div>
     </main>
   );
