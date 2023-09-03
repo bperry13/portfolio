@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import "./globals.css";
+import Link from "next/link";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -38,13 +39,17 @@ export default function Home() {
       </div>
       <div className={styles.page}>
         <div className={styles.title}>
-          <h1>Hi, I'm Brett.</h1>
+          <h1>Hello, I'm Brett.</h1>
           <p>
             I'm an emerging software engineer based in Texas. Have a look around
             and let me know if you're interested in working together.
           </p>
-          <button className={styles.button}>Portfolio</button>
-          <button className={styles.button}>Resume</button>
+          <button className={styles.button}>
+            <Link href="/portfolio">Portfolio</Link>
+          </button>
+          <button className={styles.button}>
+            <Link href="/resume">About Me</Link>
+          </button>
         </div>
       </div>
       <div className={styles.footer}>
