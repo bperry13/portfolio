@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div className={styles.page}>
         <div className={styles.title}>
-          <h1>Hi, I'm Brett.</h1>
+          <h1>Hello, I'm Brett.</h1>
           <p>
             I'm an emerging software engineer based in Texas. Have a look around
             and let me know if you're interested in working together.
