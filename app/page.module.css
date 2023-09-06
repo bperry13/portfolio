@@ -1,5 +1,10 @@
 /* ---------- lg - 1100px max ---------- */
+
 .main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 20px;
+  /**/
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -78,19 +83,21 @@
   font: inherit;
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--primary-font-color);
   margin: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 0.1rem solid transparent;
   border-color: var(--primary-font-color);
   background-color: transparent;
-  color: var(--primary-font-color);
+
   transition: all 0.25s ease-in-out;
 }
 
 .button:hover {
   cursor: pointer;
   color: var(--primary-hover-color);
+  background-color: var(--hover-background-glow);
 }
 
 .footer {
@@ -103,7 +110,7 @@
 }
 
 /* ---------- md - 900px max  ---------- */
-@media screen and (max-width: var(--md-width)) {
+@media screen and (max-width: 900px) {
   .main {
     max-width: var(--md-width);
     align-items: center;
@@ -125,7 +132,7 @@
 }
 
 /* ---------- sm - 700px max  ---------- */
-@media screen and (max-width: var(--sm-width)) {
+@media screen and (max-width: 700px) {
   .main {
     min-width: 100vw;
     min-height: 100vh;
