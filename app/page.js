@@ -13,13 +13,7 @@ export default function Home() {
       <div className={styles.header}>
         <div className={styles.logo}>
           <a href="https://www.brettperry.dev">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width={60}
-              height={60}
-              className={styles.logo}
-            />
+            <Image src="/logo.png" alt="logo" width={60} height={60} />
           </a>
         </div>
         <div className={styles.social}>
@@ -51,9 +45,6 @@ export default function Home() {
             <Link href="/resume">About Me</Link>
           </button>
         </div>
-      </div>
-      <div className={styles.footer}>
-        <p>Developed and designed by &copy;BRETTPERRY</p>
       </div>
     </main>
   );
