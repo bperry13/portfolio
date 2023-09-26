@@ -6,6 +6,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             <AiOutlineGithub alt="GitHub" size={40} />
           </a>
           <a href="https://twitter.com/brettperry_dev" target="_blank">
-            <AiOutlineTwitter alt="Twitter" size={40} />
+            <FaXTwitter alt="Twitter" size={40} />
           </a>
           <a href="https://www.discord.com" target="_blank">
             <FaDiscord alt="Discord" size={40} />
