@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaXTwitter, FaDiscord, FaLinkedin, FaToolbox } from "react-icons/fa6";
@@ -8,20 +9,28 @@ import web1 from "../../public/web1.png";
 import web3 from "../../public/web3.png";
 import web5 from "../../public/web5.png";
 import logo from "../../public/logo.png";
+import { useState } from "react";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div>
-      <main className="bg-white px-5 md:px-20 lg:px-40">
+    <div className={darkMode ? "dark" : ""}>
+      <main className="bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 flex justify-between">
             <div className="flex items-center">
               <Image src={logo} alt="logo" className="h-10 w-10" />
-              <h1 className="text-2xl font-burtons">brett perry</h1>
+              <h1 className="text-2xl font-burtons dark:text-white">
+                brett perry
+              </h1>
             </div>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl"></BsFillMoonStarsFill>
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl dark:text-white"
+                ></BsFillMoonStarsFill>
               </li>
               <li>
                 <a
@@ -34,13 +43,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl">
-              Brett Perry
-            </h2>
-            <h3 className="text-xl py-2 md:text-3xl">
-              Developer and designer.
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <h2 className="header">Brett Perry</h2>
+            <h3 className="sub-header">Developer and designer.</h3>
+            <p className="paragraph">
               Freelancer providing services for programming and web design
               needs. Join me down below and let's get to work!
             </p>
@@ -140,7 +145,7 @@ export default function Home() {
               programming, and teaching.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-1o lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
                 src={web1}
@@ -165,7 +170,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="mt-3 sm:text-xs">Brett Perry © 2023</div>
+          <div className="py-3 sm:text-xs text-right">Brett Perry © 2023</div>
         </section>
       </main>
     </div>

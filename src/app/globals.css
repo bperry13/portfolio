@@ -6,3 +6,17 @@
   font-family: "burtons";
   src: url("../../public/Burtons.otf");
 }
+
+@layer components {
+  .header {
+    @apply text-4xl py-2 text-teal-600 font-medium md:text-6xl;
+  }
+
+  .sub-header {
+    @apply text-xl py-2 md:text-3xl dark:text-white;
+  }
+
+  .paragraph {
+    @apply py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto;
+  }
+}
