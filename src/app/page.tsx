@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-5 mx-auto md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 flex justify-between">
             <div className="flex items-center">
@@ -33,29 +33,26 @@ export default function Home() {
                 ></BsFillMoonStarsFill>
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-md ml-8"
-                  href="#"
-                >
+                <a className="button-glow" href="#">
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center px-10 py-5">
             <h2 className="header">Brett Perry</h2>
-            <h3 className="sub-header">Developer and designer.</h3>
+            <h3 className="sub-header">Web development and design.</h3>
             <p className="paragraph">
-              Freelancer providing services for programming and web design
-              needs. Join me down below and let's get to work!
+              I'm an emerging software engineer based in Texas. Have a look
+              around and let me know if you're interested in working together.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+          <div className="icons">
             <FaXTwitter />
             <FaLinkedin />
             <FaDiscord />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
+          <div className="image-window">
             <Image
               src={me}
               alt="me"
@@ -67,82 +64,64 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-10">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Since the beginning of my jouney as a freelance developer, I've
-              done remote work for
-              <span className="text-teal-500"> agencies</span>, consulted for
-              <span className="text-teal-500"> startups</span>, and collaborated
-              with talented people to create digital products for both business
-              and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I offer a wide range of services including brand design,
-              programming, and teaching.
+            <h3 className="sub-header mt-3">Services I offer</h3>
+            <p className="paragraph">
+              Over the last few years I've learned a lot about{" "}
+              <span className="text-teal-500">web development</span> and{" "}
+              <span className="text-teal-500">eCommerce</span>. I've created a
+              network of amazing people and resources that I use to help build
+              online businesses. Whatever your digital needs are, I'm here to
+              help.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="tool-card">
               <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Front End Toolbox
-              </h3>
-              <p className="py-2">
+              <h3 className="tool-card-header">Web Dev Toolbox</h3>
+              <p className="tool-card-paragraph">
                 Creating elegant designs suited for your needs following core
                 design theory
               </p>
               <h4 className="py-4 text-teal-600">Front End Tools I use</h4>
-              <p className="text-gray-800 py-1">TypeScript</p>
-              <p className="text-gray-800 py-1">Next.js</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-300 py-1">TypeScript</p>
+              <p className="text-gray-300 py-1">Next.js</p>
+              <p className="text-gray-300 py-1">React</p>
+              <p className="text-gray-300 py-1">Tailwind CSS</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="tool-card">
               <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Front End Toolbox
-              </h3>
-              <p className="py-2">
+              <h3 className="tool-card-header">Design Toolbox</h3>
+              <p className="tool-card-paragraph">
                 Creating elegant designs suited for your needs following core
                 design theory
               </p>
-              <h4 className="py-4 text-teal-600">Front End Tools I use</h4>
-              <p className="text-gray-800 py-1">TypeScript</p>
-              <p className="text-gray-800 py-1">Next.js</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-300 py-1">Adobe</p>
+              <p className="text-gray-300 py-1">DaisyUI</p>
+              <p className="text-gray-300 py-1">TBD</p>
+              <p className="text-gray-300 py-1">TBD</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="tool-card">
               <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Front End Toolbox
-              </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory
+              <h3 className="tool-card-header">eCommerce Toolbox</h3>
+              <p className="tool-card-paragraph">
+                Tools I use to help build online businesses
               </p>
-              <h4 className="py-4 text-teal-600">Front End Tools I use</h4>
-              <p className="text-gray-800 py-1">TypeScript</p>
-              <p className="text-gray-800 py-1">Next.js</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <h4 className="py-4 text-teal-600">eCommerce Tools I use</h4>
+              <p className="text-gray-300 py-1">Stripe</p>
+              <p className="text-gray-300 py-1">TBD</p>
+              <p className="text-gray-300 py-1">TBD</p>
+              <p className="text-gray-300 py-1">TBD</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Since the beginning of my jouney as a freelance developer, I've
-              done remote work for
-              <span className="text-teal-500"> agencies</span>, consulted for
-              <span className="text-teal-500"> startups</span>, and collaborated
-              with talented people to create digital products for both business
-              and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I offer a wide range of services including brand design,
-              programming, and teaching.
+            <h3 className="sub-header">Portfolio</h3>
+            <p className="paragraph">
+              Here are a few projects I've worked on recently. I'm always
+              looking for new opportunities to learn and grow, so if you have a
+              project you'd like to work on together, please reach out.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -170,7 +149,9 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="py-3 sm:text-xs text-right">Brett Perry © 2023</div>
+          <div className="py-3 sm:text-xs text-right dark:text-gray-300">
+            Brett Perry © 2023
+          </div>
         </section>
       </main>
     </div>
