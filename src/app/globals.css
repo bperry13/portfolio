@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "burtons";
+  src: url("../../public/Burtons.otf");
+}
+
+@layer components {
+  .button-glow {
+    /*bg-yellow-500 shadow-lg shadow-yellow-400/50*/
+    /*@apply bg-gradient-to-r from-cyan-500 to-teal-500 shadow-lg text-white px-2 py-2 rounded-md ml-8;*/
+    @apply bg-gradient-to-r from-cyan-500 to-teal-500 shadow-lg shadow-cyan-500/50 text-white px-2 py-2 rounded-md ml-8;
+  }
+
+  .header {
+    @apply text-4xl py-2 text-gray-900 font-medium md:text-6xl dark:text-gray-200;
+  }
+
+  .sub-header {
+    @apply text-center text-xl py-2 md:text-3xl dark:text-gray-200;
+  }
+
+  .paragraph {
+    @apply text-center py-3 leading-8 text-gray-800 md:text-xl mx-auto dark:text-gray-300;
+  }
+
+  .icons {
+    @apply text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300;
+  }
+
+  .image-window {
+    @apply relative mx-auto bg-gradient-to-b from-gray-800 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96;
+  }
+}
