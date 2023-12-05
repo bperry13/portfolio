@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white px-5 mx-auto md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="main">
         <section className="min-h-screen">
           <nav className="py-10 flex justify-between">
             <div className="flex items-center">
@@ -36,7 +36,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="button-glow" href="#">
-                  Business
+                  Contact Me
                 </a>
               </li>
             </ul>
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h3 className="sub-header mt-5 md:mt-7">My Tools</h3>
+          <h3 className="sub-header mt-5 md:mt-7">Tools</h3>
           <div className="icons">
             <SiNextdotjs />
             <SiReact />
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="sub-header mt-5">Services I offer</h3>
+            <h3 className="sub-header mt-5">Services</h3>
             <p className="paragraph">
               Over the last few years I've learned a lot about{" "}
               <span className="text-teal-500">web development</span> and{" "}
@@ -92,18 +92,10 @@ export default function Home() {
               <li>Digital Marketing</li>
             </ul>
           </div>
-          <div className="text-center pt-2 pb-7">
-            <a
-              href="#"
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 shadow-lg shadow-cyan-500/50 text-white px-2 py-2 rounded-md"
-            >
-              Contact Me
-            </a>
-          </div>
         </section>
         <section>
           <div>
-            <h3 className="sub-header mt-5">My Work</h3>
+            <h3 className="sub-header mt-5">Portfolio</h3>
             <p className="paragraph">
               Here are a few projects I've worked on recently. I'm always
               looking for new opportunities to learn and grow, so if you have a

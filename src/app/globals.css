@@ -8,6 +8,10 @@
 }
 
 @layer components {
+  .main {
+    @apply bg-white px-5 mx-auto md:px-20 lg:px-40 dark:bg-gray-900;
+  }
+
   .button-glow {
     /*bg-yellow-500 shadow-lg shadow-yellow-400/50*/
     /*@apply bg-gradient-to-r from-cyan-500 to-teal-500 shadow-lg text-white px-2 py-2 rounded-md ml-8;*/
