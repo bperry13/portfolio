@@ -2,7 +2,12 @@
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaXTwitter, FaDiscord, FaLinkedin, FaToolbox } from "react-icons/fa6";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiReact,
+} from "react-icons/si";
 import me from "../../public/me.png";
 import ed from "../../public/dev-ed-wave.png";
 import web1 from "../../public/web1.png";
@@ -20,10 +25,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 flex justify-between">
             <div className="flex items-center">
-              <Image src={logo} alt="logo" className="h-10 w-10" />
-              <h1 className="text-2xl font-burtons dark:text-white">
-                brett perry
-              </h1>
+              <Image src={logo} alt="logo" className="h-12 w-12" />
             </div>
             <ul className="flex items-center">
               <li>
@@ -34,7 +36,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="button-glow" href="#">
-                  Resume
+                  Business
                 </a>
               </li>
             </ul>
@@ -63,8 +65,17 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <h3 className="sub-header mt-5 md:mt-7">My Tools</h3>
+          <div className="icons">
+            <SiNextdotjs />
+            <SiReact />
+            <SiTypescript />
+            <SiTailwindcss />
+          </div>
+        </section>
+        <section>
           <div>
-            <h3 className="sub-header mt-3">Services I offer</h3>
+            <h3 className="sub-header mt-5">Services I offer</h3>
             <p className="paragraph">
               Over the last few years I've learned a lot about{" "}
               <span className="text-teal-500">web development</span> and{" "}
@@ -74,50 +85,25 @@ export default function Home() {
               help.
             </p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="tool-card">
-              <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="tool-card-header">Web Dev Toolbox</h3>
-              <p className="tool-card-paragraph">
-                Creating elegant designs suited for your needs following core
-                design theory
-              </p>
-              <h4 className="py-4 text-teal-600">Front End Tools I use</h4>
-              <p className="text-gray-300 py-1">TypeScript</p>
-              <p className="text-gray-300 py-1">Next.js</p>
-              <p className="text-gray-300 py-1">React</p>
-              <p className="text-gray-300 py-1">Tailwind CSS</p>
-            </div>
-            <div className="tool-card">
-              <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="tool-card-header">Design Toolbox</h3>
-              <p className="tool-card-paragraph">
-                Creating elegant designs suited for your needs following core
-                design theory
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-300 py-1">Adobe</p>
-              <p className="text-gray-300 py-1">DaisyUI</p>
-              <p className="text-gray-300 py-1">TBD</p>
-              <p className="text-gray-300 py-1">TBD</p>
-            </div>
-            <div className="tool-card">
-              <FaToolbox className="text-6xl text-teal-600 mx-auto" />
-              <h3 className="tool-card-header">eCommerce Toolbox</h3>
-              <p className="tool-card-paragraph">
-                Tools I use to help build online businesses
-              </p>
-              <h4 className="py-4 text-teal-600">eCommerce Tools I use</h4>
-              <p className="text-gray-300 py-1">Stripe</p>
-              <p className="text-gray-300 py-1">TBD</p>
-              <p className="text-gray-300 py-1">TBD</p>
-              <p className="text-gray-300 py-1">TBD</p>
-            </div>
+          <div className="text-center py-3 text-gray-800 md:text-xl dark:text-gray-300">
+            <ul>
+              <li>Web Development</li>
+              <li>Mobile Development</li>
+              <li>Digital Marketing</li>
+            </ul>
+          </div>
+          <div className="text-center pt-2 pb-7">
+            <a
+              href="#"
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 shadow-lg shadow-cyan-500/50 text-white px-2 py-2 rounded-md"
+            >
+              Contact Me
+            </a>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="sub-header">Portfolio</h3>
+            <h3 className="sub-header mt-5">My Work</h3>
             <p className="paragraph">
               Here are a few projects I've worked on recently. I'm always
               looking for new opportunities to learn and grow, so if you have a
@@ -127,21 +113,28 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
-                src={web1}
+                src={logo}
                 alt="web1"
                 className="rounded-lg object-cover h-full w-full"
               />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web3}
+                src={logo}
                 alt="web3"
                 className="rounded-lg object-cover h-full w-full"
               />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web5}
+                src={logo}
+                alt="web5"
+                className="rounded-lg object-cover h-full w-full"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={logo}
                 alt="web5"
                 className="rounded-lg object-cover h-full w-full"
               />

@@ -19,11 +19,11 @@
   }
 
   .sub-header {
-    @apply text-xl py-2 md:text-3xl dark:text-gray-200;
+    @apply text-center text-xl py-2 md:text-3xl dark:text-gray-200;
   }
 
   .paragraph {
-    @apply py-3 leading-8 text-gray-800 md:text-xl mx-auto dark:text-gray-300;
+    @apply text-center py-3 leading-8 text-gray-800 md:text-xl mx-auto dark:text-gray-300;
   }
 
   .icons {
@@ -32,17 +32,5 @@
 
   .image-window {
     @apply relative mx-auto bg-gradient-to-b from-gray-800 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96;
-  }
-
-  .tool-card {
-    @apply min-w-[266px] text-center shadow-lg p-10 rounded-xl my-10;
-  }
-
-  .tool-card-header {
-    @apply text-lg text-gray-900 font-medium pt-8 pb-2 dark:text-gray-200;
-  }
-
-  .tool-card-paragraph {
-    @apply py-2 text-gray-700 dark:text-gray-300;
   }
 }
