@@ -50,9 +50,24 @@ export default function Home() {
             </p>
           </div>
           <div className="icons">
-            <FaXTwitter />
-            <FaLinkedin />
-            <FaDiscord />
+            <a
+              href="https://twitter.com/brettperry_dev"
+              className="hover:cursor-pointer"
+            >
+              <FaXTwitter />
+            </a>
+            <a
+              href="https://linkedin.com/in/brettjp"
+              className="hover:cursor-pointer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://discordapp.com/users/976281592936939540"
+              className="hover:cursor-pointer"
+            >
+              <FaDiscord />
+            </a>
           </div>
           <div className="image-window">
             <Image
