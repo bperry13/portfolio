@@ -43,7 +43,7 @@ export default function Home() {
           </nav>
           <div className="text-center px-10 py-5">
             <h2 className="header">Brett Perry</h2>
-            <h3 className="sub-header">Web development and design.</h3>
+            <h3 className="sub-header">Information Technology and Software</h3>
             <p className="paragraph">
               I'm an emerging software engineer based in Texas. Have a look
               around and let me know if you're interested in working together.
@@ -93,8 +93,8 @@ export default function Home() {
             <h3 className="sub-header mt-5">Services</h3>
             <p className="paragraph">
               Over the last few years I've learned a lot about{" "}
-              <span className="text-teal-500">web development</span> and{" "}
-              <span className="text-teal-500">eCommerce</span>. I've created a
+              <span className="text-teal-500">infomation technology</span> and{" "}
+              <span className="text-teal-500">software</span>. I've created a
               network of amazing people and resources that I use to help build
               online businesses. Whatever your digital needs are, I'm here to
               help.
@@ -104,7 +104,7 @@ export default function Home() {
             <ul>
               <li>Web Development</li>
               <li>Mobile Development</li>
-              <li>Digital Marketing</li>
+              <li>Back End Development</li>
             </ul>
           </div>
         </section>
