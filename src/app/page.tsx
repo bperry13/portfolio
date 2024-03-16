@@ -140,22 +140,22 @@ export default function Home() {
                 </a>
               </div>
               <div className="mt-1">
-                I built my website using Next.js, React, TypeScript, Tailwind
-                CSS. It is deployed on Vercel setup with a CI/CD pipeline in
-                GitHub.
+                I built my website using Next.js, React, TypeScript, and Tailwind
+                CSS. I setup a CI/CD pipeline in GitHub that automatically deploys
+                a merge to Vercel's cloud. 
               </div>
             </div>
             <div className="mt-5 ml-6 text-gray-800 md:text-xl mx-auto dark:text-gray-300">
               <div className="font-semibold">
-                Chextr MD, a mobile app for doctors.
+                Chextr MD, a mobile app for doctors
               </div>
               <div>Private Repo</div>
               <div>
                 I collaborated with a team to develop a web application that
-                give doctors a secure platform to communicate with their
+                gives doctors a secure platform to communicate with their
                 patients. The app is built with Next.js, React, TypeScript, and
                 Tailwind CSS. I focused on the authentication and authorization
-                features to make sure routes were protected.
+                features to make sure routes and data are protected.
               </div>
             </div>
           </div>
