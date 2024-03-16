@@ -15,6 +15,10 @@ import web3 from "../../public/web3.png";
 import web5 from "../../public/web5.png";
 import logo from "../../public/logo.png";
 import { useState } from "react";
+import { SiPython } from "react-icons/si";
+import { SiLinux } from "react-icons/si";
+import { SiDocker } from "react-icons/si";
+import { SiKubernetes } from "react-icons/si";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -35,7 +39,11 @@ export default function Home() {
                 ></BsFillMoonStarsFill>
               </li>
               <li>
-                <a className="button-glow" href="#">
+                <a
+                  className="button-glow"
+                  href="mailto:brettperry7@gmail.com"
+                  target="_blank"
+                >
                   Contact Me
                 </a>
               </li>
@@ -87,6 +95,12 @@ export default function Home() {
             <SiTypescript />
             <SiTailwindcss />
           </div>
+          <div className="icons">
+            <SiPython />
+            <SiLinux />
+            <SiDocker />
+            <SiKubernetes />
+          </div>
         </section>
         <section>
           <div>
@@ -110,41 +124,39 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="sub-header mt-5">Portfolio</h3>
+            <h3 className="sub-header mt-5">Projects</h3>
             <p className="paragraph">
               Here are a few projects I've worked on recently. I'm always
               looking for new opportunities to learn and grow, so if you have a
               project you'd like to work on together, please reach out.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={logo}
-                alt="web1"
-                className="rounded-lg object-cover h-full w-full"
-              />
+          <div>
+            <div className="ml-6 text-gray-800 md:text-xl mx-auto dark:text-gray-300">
+              <div className="font-semibold">Portfolio</div>
+              <div className="underline">
+                <a href="https://github.com/bperry13/portfolio">
+                  Public GitHub Repo
+                </a>
+              </div>
+              <div className="mt-1">
+                I built my website using Next.js, React, TypeScript, Tailwind
+                CSS. It is deployed on Vercel setup with a CI/CD pipeline in
+                GitHub.
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={logo}
-                alt="web3"
-                className="rounded-lg object-cover h-full w-full"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={logo}
-                alt="web5"
-                className="rounded-lg object-cover h-full w-full"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={logo}
-                alt="web5"
-                className="rounded-lg object-cover h-full w-full"
-              />
+            <div className="mt-5 ml-6 text-gray-800 md:text-xl mx-auto dark:text-gray-300">
+              <div className="font-semibold">
+                Chextr MD, a mobile app for doctors.
+              </div>
+              <div>Private Repo</div>
+              <div>
+                I collaborated with a team to develop a web application that
+                give doctors a secure platform to communicate with their
+                patients. The app is built with Next.js, React, TypeScript, and
+                Tailwind CSS. I focused on the authentication and authorization
+                features to make sure routes were protected.
+              </div>
             </div>
           </div>
         </section>
