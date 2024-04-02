@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { FaXTwitter, FaDiscord, FaLinkedin, FaToolbox } from "react-icons/fa6";
 import {
   SiTailwindcss,
@@ -9,16 +9,18 @@ import {
   SiReact,
 } from "react-icons/si";
 import me from "../../public/me.png";
-import ed from "../../public/dev-ed-wave.png";
-import web1 from "../../public/web1.png";
-import web3 from "../../public/web3.png";
-import web5 from "../../public/web5.png";
 import logo from "../../public/logo.png";
 import { useState } from "react";
 import { SiPython } from "react-icons/si";
 import { SiLinux } from "react-icons/si";
 import { SiDocker } from "react-icons/si";
 import { SiKubernetes } from "react-icons/si";
+import ToggleButton from "@/components/ToggleButton";
+
+interface Props {
+  darkMode: boolean;
+  setDarkMode: (darkMode: boolean) => void;
+}
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -33,10 +35,10 @@ export default function Home() {
             </div>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl dark:text-white"
-                ></BsFillMoonStarsFill>
+                <ToggleButton
+                  darkMode={darkMode}
+                  setDarkMode={setDarkMode}
+                ></ToggleButton>
               </li>
               <li>
                 <a
@@ -140,9 +142,9 @@ export default function Home() {
                 </a>
               </div>
               <div className="mt-1">
-                I built my website using Next.js, React, TypeScript, and Tailwind
-                CSS. I setup a CI/CD pipeline in GitHub that automatically deploys
-                a merge to Vercel's cloud. 
+                I built my website using Next.js, React, TypeScript, and
+                Tailwind CSS. I setup a CI/CD pipeline in GitHub that
+                automatically deploys a merge to Vercel's cloud.
               </div>
             </div>
             <div className="mt-5 ml-6 text-gray-800 md:text-xl mx-auto dark:text-gray-300">
