@@ -14,12 +14,12 @@ const ToggleButton = ({
       {!darkMode ? (
         <BsFillMoonStarsFill
           onClick={() => setDarkMode(!darkMode)}
-          className="cursor-pointer text-2xl dark:text-white"
+          className="cursor-pointer text-3xl dark:text-white"
         ></BsFillMoonStarsFill>
       ) : (
         <BsSunFill
           onClick={() => setDarkMode(!darkMode)}
-          className="cursor-pointer text-2xl dark:text-yellow-500"
+          className="cursor-pointer text-3xl dark:text-yellow-500"
         ></BsSunFill>
       )}
     </div>
