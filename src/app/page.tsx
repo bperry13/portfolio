@@ -42,7 +42,7 @@ export default function Home() {
             alt="Brett Perry Logo"
             width={50}
             height={50}
-            className="rounded-full"
+            className="rounded-full bg-gray-900"
           />
         </div>
         <div className="p-3 absolute right-3 top-3">
