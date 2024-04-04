@@ -23,7 +23,7 @@ const config: Config = {
       animation: {
         // You can then reference these keyframes by name in the 
         // animation section of your theme configuration
-        fall: 'fall 3s ease infinite',
+        fall: 'fall 3s ease',
         // animation shorthand CSS property i.e
         // animation-name | animation-duration | animation-timing-function 
         // animation-iteration-count

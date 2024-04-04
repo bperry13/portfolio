@@ -8,10 +8,20 @@ import Link from "next/link";
 const page = () => {
   return (
     <div className="bg-white dark:bg-gray-900">
-      <div className="absolute left-3 top-3">
-        <Link href="/">Back</Link>
+      <section>
+        <div className="absolute left-3 top-3">
+          <Link href="/">Home</Link>
+        </div>
+        <div className="absolute right-3 top-3">
+          <Link href="/projects">Projects</Link>
+        </div>
+      </section>
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-col items-center">
+          <div className="text-4xl font-burtons">Contact</div>
+          <div className="text-2xl">Under Construction</div>
+        </div>
       </div>
-      <div className="absolute right-3 top-3">Toggle</div>
     </div>
   );
 };

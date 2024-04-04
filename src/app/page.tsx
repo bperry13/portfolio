@@ -62,8 +62,8 @@ export default function Home() {
               ))}
             </ul>
           </nav>
-          <section className="overflow-hidden">
-            <h1 className="animate-fall text-4xl text-gray-800 dark:text-gray-300 duration-1000 cursor-default sm:text-8xl md:text-9xl">
+          <section className="">
+            <h1 className="font-burtons font-semibold text-4xl text-gray-800 dark:text-gray-300 cursor-default md:text-9xl">
               Brett Perry
             </h1>
           </section>
