@@ -15,26 +15,20 @@ import { SiPython } from "react-icons/si";
 import { SiLinux } from "react-icons/si";
 import { SiDocker } from "react-icons/si";
 import { SiKubernetes } from "react-icons/si";
-import ToggleButton from "@/components/ToggleButton";
+import { ToggleButton } from "@/components/ToggleButton";
 
 import Link from "next/link";
 import React from "react";
+import Footer from "@/components/Footer";
 
 const navigation = [
   { name: "Contact", href: "/contact" },
   { name: "Projects", href: "/projects" },
 ];
 
-interface Props {
-  darkMode: boolean;
-  setDarkMode: (darkMode: boolean) => void;
-}
-
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
-
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <div className="bg-white dark:bg-gray-900">
         <div className="absolute left-3 top-3">
           <Image
@@ -46,7 +40,7 @@ export default function Home() {
           />
         </div>
         <div className="p-3 absolute right-3 top-3">
-          <ToggleButton darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ToggleButton />
         </div>
         <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
           <nav className="my-16 animate-fade-in">
@@ -81,6 +75,7 @@ export default function Home() {
               if you're interested in working together.{" "}
             </h2>
           </section>
+          <Footer />
         </div>
       </div>
     </div>
