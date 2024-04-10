@@ -29,7 +29,7 @@ const navigation = [
 export default function Home() {
   return (
     <main className="bg-white dark:bg-gray-900">
-      <header>
+      <nav>
         <div className="absolute left-3 top-3">
           <Image
             src={logo}
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="p-3 absolute right-3 top-3">
           <ToggleButton />
         </div>
-      </header>
+      </nav>
 
       <section className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
         <div className="my-16 animate-fade-in">
