@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import ToggleButton from "@/components/ToggleButton";
+import { ToggleButton } from "@/components/ToggleButton";
 import { useState } from "react";
 import Link from "next/link";
 
