@@ -28,8 +28,8 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div>
-      <div className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-gray-900">
+      <header>
         <div className="absolute left-3 top-3">
           <Image
             src={logo}
@@ -42,42 +42,45 @@ export default function Home() {
         <div className="p-3 absolute right-3 top-3">
           <ToggleButton />
         </div>
-        <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
-          <nav className="my-16 animate-fade-in">
-            <ul className="flex items-center justify-center gap-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-lg duration-500 text-zinc-500 hover:text-zinc-300"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </ul>
-          </nav>
-          <section className="">
-            <h1 className="font-burtons font-semibold text-4xl text-gray-800 dark:text-gray-300 cursor-default md:text-9xl">
-              Brett Perry
-            </h1>
-          </section>
-          <section className="my-16 px-5 text-center py-3 leading-8  md:text-xl;">
-            <h2 className="text-gray-800 dark:text-gray-300">
-              I'm an emerging software engineer based in Texas. Have a look
-              around and {""}
+      </header>
+
+      <section className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
+        <div className="my-16 animate-fade-in">
+          <ul className="flex items-center justify-center gap-4">
+            {navigation.map((item) => (
               <Link
-                target="_blank"
-                href="#"
-                className="underline duration-500 hover:text-zinc-300"
+                key={item.href}
+                href={item.href}
+                className="text-lg duration-500 text-zinc-500 hover:text-zinc-300"
               >
-                let me know
-              </Link>{" "}
-              if you're interested in working together.{" "}
-            </h2>
-          </section>
-          <Footer />
+                {item.name}
+              </Link>
+            ))}
+          </ul>
         </div>
-      </div>
-    </div>
+        <div>
+          <h1 className=" font-semibold text-4xl text-gray-800 dark:text-gray-300 cursor-default md:text-9xl">
+            Brett Perry
+          </h1>
+        </div>
+        <div className="my-16 px-5 text-center py-3 leading-8  md:text-xl;">
+          <h2 className="text-gray-800 dark:text-gray-300">
+            I'm an emerging software engineer based in Texas. Have a look around
+            and {""}
+            <Link
+              target="_blank"
+              href="#"
+              className="underline duration-500 hover:text-zinc-300"
+            >
+              let me know
+            </Link>{" "}
+            if you're interested in working together.{" "}
+          </h2>
+        </div>
+      </section>
+      <footer className="px-2">
+        <Footer />
+      </footer>
+    </main>
   );
 }
